@@ -52,6 +52,7 @@ String edityear="1989";
     {
     	
     	driver.quit();
+    	System.out.println("browser quit");
     }
 	
 	
@@ -149,4 +150,5 @@ String edityear="1989";
 		Assert.assertTrue(result);
 		
 	}
+
 }
