@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Testcase1">
+      <class name="com.openmrs.Testcase1">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="setup"/>
-          <include name="editPatient"/>
+          <include name="Logintoapp"/>
+          <include name="viewPatientDetails"/>
         </methods>
-      </class> <!-- Testcase1 -->
+      </class> <!-- com.openmrs.Testcase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

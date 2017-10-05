@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
-    <classes>
-      <class name=".Testcase1"/>
-    </classes>
-  </test> <!-- Test -->
+<suite name="Suite" >
+                
+		        <parameter name="url" value="https://demo.openmrs.org/openmrs/login.htm" />
+
+	<test name="IETest">
+		        <parameter name="browser" value="Chrome" />
+		   		<parameter name="username" value="Admin"></parameter>
+				<parameter name="password" value="Admin123"></parameter>
+				
+				<parameter name="givenname" value="ANN" ></parameter>
+				<parameter name="middlename" value=""></parameter>
+				<parameter name="familyName" value="CALDARERA "></parameter>
+				<parameter name="gen" value="Female"></parameter>				
+				<parameter name="dob" value="12/21/1940"></parameter>
+				<parameter name="address1" value="22513 Highway 1"></parameter>
+				<parameter name="address2" value="Suite 7896"></parameter>
+				<parameter name="city" value="Thibodaux"></parameter>
+				<parameter name="state" value="TX"></parameter>
+				<parameter name="country" value="USA"></parameter>
+				<parameter name="zip" value="85296"></parameter>
+				<parameter name="number" value="7895623694"></parameter>
+				<parameter name="relation" value="Parent"></parameter>				
+				<parameter name="relative" value="Villa"></parameter>
+				
+				<parameter name="editgivenname" value="Caren"></parameter>
+				<parameter name="edityear" value="1989"></parameter>
+					
+				
+				
+		<classes>
+			<class name="com.openmrs.Testcase1" />
+		</classes>
+	</test>
+
+
+	<!-- <test name="IETest">
+	             <parameter name="browser" value="IE" />
+		        <parameter name="username" value="Admin"></parameter>
+				<parameter name="password" value="Admin123"></parameter>
+				<parameter name="givenname" value="James"></parameter>
+				<parameter name="middlename" value="K"></parameter>
+				<parameter name="familyName" value="John"></parameter>
+				<parameter name="gen" value="Male"></parameter>				
+				<parameter name="dob" value="09/10/1978"></parameter>
+				<parameter name="mon" value="September"></parameter>
+				<parameter name="year" value="1978"></parameter>
+				<parameter name="address1" value="1201 Woodlands dr"></parameter>
+				<parameter name="address2" value="Suite 567"></parameter>
+				<parameter name="city" value="Spring"></parameter>
+				<parameter name="state" value="TX"></parameter>
+				<parameter name="country" value="USA"></parameter>
+				<parameter name="zip" value="77380"></parameter>
+				<parameter name="number" value="7894561235"></parameter>
+				<parameter name="relation" value="Parent"></parameter>				
+				<parameter name="relative" value="Karen"></parameter>
+				<parameter name="editgivenname" value="Johan"></parameter>
+				<parameter name="edityear" value="1989"></parameter>
+					
+				
+				
+		<classes>
+			<class name="com.openmrs.Testcase1" />
+		</classes>
+	</test> 
+   -->
+  
+  
 </suite> <!-- Suite -->
